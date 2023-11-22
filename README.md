@@ -30,4 +30,4 @@ Feel free to reach out to me at
 
 ## Portfolio
 
-Take a broader look at me in my [portfolio](juamelmos.github.io).
+Take a broader look at me in my [portfolio](https://juanmelmos.github.io).
