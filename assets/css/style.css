@@ -2,3 +2,7 @@ html {
   width: 800px;
   margin: auto;
 }
+
+img.email {
+  vertical-align: middle;
+}
