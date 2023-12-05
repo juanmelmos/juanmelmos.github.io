@@ -1,8 +1,14 @@
 html {
-  width: 800px;
+  max-width: 90ch;
   margin: auto;
 }
 
 img.email {
   vertical-align: middle;
+}
+
+@media (max-width: 90ch) {
+  html {
+    margin: auto 2px;
+  }
 }
