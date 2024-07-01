@@ -2,7 +2,7 @@
 
 ## About Me
 
-Hello, my name is Juan and I am currently a student focusing on web
+Hello, my name is Juan and I am focusing on web
 development. My studies have equipped me with a solid foundation in
 various web technologies such as HTML, CSS, JavaScript, and more. I am always
 eager to learn and adapt to new technologies and trends in the web development
