@@ -1,4 +1,144 @@
 html {
-  width: 800px;
+  max-width: 90ch;
   margin: auto;
+}
+
+/* Font size */
+
+body{
+  font-size: 18px;
+}
+
+/* Colours */
+
+body {
+  background-color: #000000;
+  color: #00FFFB;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section a {
+  color: #FFFF00;
+  text-decoration: none;
+}
+
+section a:visited {
+  color: #FFA500;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/* Fixed navigation menu at the top */
+nav {
+  background-color: #333;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+/* Style for the drop-down menu */
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul ul li a {
+  padding: 10px 20px;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+img.email {
+  vertical-align: middle;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Media query for border margins */
+
+@media (max-width: 90ch) {
+  html {
+    margin: auto 2px;
+  }
+}
+
+
+/* Media query for 700px */
+@media screen and (max-width: 700px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px; /* Ajusta según la altura de tu header */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+  }
+
+  .menu-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
 }
