@@ -3,6 +3,12 @@ html {
   margin: auto;
 }
 
+/* Font size */
+
+body{
+  font-size: 18px;
+}
+
 /* Colours */
 
 body {
