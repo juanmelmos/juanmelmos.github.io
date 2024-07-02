@@ -89,6 +89,8 @@ img.email {
   vertical-align: middle;
 }
 
+/* Media query for border margins */
+
 @media (max-width: 90ch) {
   html {
     margin: auto 2px;
