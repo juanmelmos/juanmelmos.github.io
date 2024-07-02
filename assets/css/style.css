@@ -95,10 +95,50 @@ img.email {
   vertical-align: middle;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 /* Media query for border margins */
 
 @media (max-width: 90ch) {
   html {
     margin: auto 2px;
+  }
+}
+
+
+/* Media query for 700px */
+@media screen and (max-width: 700px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px; /* Ajusta según la altura de tu header */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+  }
+
+  .menu-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
   }
 }

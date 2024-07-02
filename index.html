@@ -37,6 +37,7 @@
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact me</a></li>
     </ul>
+    <div class="menu-toggle">&#9776;</div>
   </nav>
   <main>
     <section id="about">
@@ -162,6 +163,12 @@
   </main>
 
   <script type="text/javascript">
+    const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function () {
+          nav.classList.toggle('active');
+        });
     // JavaScript to dynamically generate the email address
     document.addEventListener("DOMContentLoaded", function () {
       var user = "juanmelguizogm";
