@@ -131,8 +131,8 @@
     </section>
     <section id="contact">
       <h2>Contact me</h2>
-      <p>Feel free to reach out to me at
-        <img src="assets/img/email.webp" alt="juanmelguizo&#64;gmail&#46;com" class="email"> or connect with me on:
+      <p>Feel free to reach out to me at <span id="email"></span> or connect
+      with me on:
       </p>
       <ul>
         <li><a href="https://www.linkedin.com/in/juan-melguizo-moscoso-b3003419a/">
@@ -141,6 +141,21 @@
       </ul>
     </section>
   </main>
+
+  <script type="text/javascript">
+    // JavaScript to dynamically generate the email address
+    document.addEventListener("DOMContentLoaded", function() {
+      var user = "juanmelguizogm";
+      var domain = "gmail.com";
+      var email = user + "@" + domain;
+      var emailLink = '<a href="mailto:' + email + '">' + email + '</a>';
+      document.getElementById('email').innerHTML = emailLink;
+    });
+  </script>
+
+
+
+
 </body>
 
 </html>
