@@ -3,7 +3,7 @@ html {
   margin: auto;
 }
 
-/* Colores accesibles */
+/* Colours */
 
 body {
   background-color: #000000;
@@ -14,9 +14,12 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Menú de navegación fijo en la parte superior */
+/* Fixed navigation menu at the top */
 nav {
   background-color: #333;
   color: white;
@@ -50,7 +53,7 @@ nav ul li a:hover {
   background-color: #575757;
 }
 
-/* Estilo para el menú desplegable */
+/* Style for the drop-down menu */
 nav ul ul {
   display: none;
   position: absolute;
