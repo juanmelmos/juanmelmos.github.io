@@ -14,13 +14,13 @@
 
 <body>
   <header>
-    <img src="./assets/img/logo.webp" width="250" height="250">
+    <img id="welcome" src="./assets/img/logo.webp" width="250" height="250">
     <div class="headerContainer">
-      <h1 id="welcome">Juan Melguizo Moscoso</h1>
+      <h1>Juan Melguizo Moscoso</h1>
       <h2>This is my portfolio, <strong>WELCOME</strong>!</h2>
     </div>
   </header>
-  <nav>
+  <nav class="menu">
     <ul>
       <li><a href="#welcome">Welcome</a></li>
       <li><a href="#about">About me</a></li>
@@ -72,7 +72,7 @@
             play. It includes a login for accessing your user account or
             registering, and offers both online and single-player modes. It also
             stores your wins, losses, and draws.</p>
-          <p>Github: <a href="https://github.com/juanmelmos/TicTacToe" title="Tic-Tac-Toe"
+          <p>Github: <a class="link" href="https://github.com/juanmelmos/TicTacToe" title="Tic-Tac-Toe"
               target="_blank">https://github.com/juanmelmos/TicTacToe</a></p>
         </li>
         <li>
@@ -86,9 +86,9 @@
             Additionally, I have integrated a robust database to manage user
             registrations, event details, and other essential data to ensure
             smooth operation and seamless user experience.</p>
-          <p>URL: <a href="https://2-peolpes.vercel.app/" title="2PEOPLES"
+          <p>URL: <a class="link" href="https://2-peolpes.vercel.app/" title="2PEOPLES"
               target="_blank">https://2-peolpes.vercel.app/</a></p>
-          <p>Github: <a href="https://github.com/juanmelmos/2PEOPLES" title="2PEOPLES"
+          <p>Github: <a class="link" href="https://github.com/juanmelmos/2PEOPLES" title="2PEOPLES"
               target="_blank">https://github.com/juanmelmos/2PEOPLES</a></p>
         </li>
       </ul>
@@ -149,32 +149,41 @@
         </dd>
       </dl>
     </section>
-    <section id="contact">
-      <h2>Contact me</h2>
+    <footer>
+      <div class="contactContainer">
+      <h2 id="contact">Contact me</h2>
       <p>Feel free to reach out to me at <span id="email"></span> or connect
         with me on:
       </p>
       <ul>
-        <li><a href="https://www.linkedin.com/in/juan-melguizo-moscoso-b3003419a/">
+        <li><a class="link" href="https://www.linkedin.com/in/juan-melguizo-moscoso-b3003419a/" title="LinkedIn"
+            target="_blank">
             LinkedIn</a></li>
-        <li><a href="https://twitter.com/Blaze_JMM">Twitter</a></li>
+        <li><a class="link" href="https://twitter.com/Blaze_JMM" title="X" target="_blank">X</a></li>
       </ul>
-    </section>
+      <h2>Report an issue</h2>
+      <p>If you found a bug or have a suggestion, please open an issue on <a class="link"
+          href="https://github.com/juanmelmos/juanmelmos.github.io/issues" title="Issue Github"
+          target="_blank">GitHub.</a>
+      </p>
+    </div>
+      <p>&#169; Copyright 2024 Juan Melguizo</p>
+    </footer>
   </main>
 
   <script type="text/javascript">
     const menuToggle = document.querySelector('.menu-toggle');
-        const nav = document.querySelector('nav ul');
+    const nav = document.querySelector('nav ul');
 
-        menuToggle.addEventListener('click', function () {
-          nav.classList.toggle('active');
-        });
+    menuToggle.addEventListener('click', function () {
+      nav.classList.toggle('active');
+    });
     // JavaScript to dynamically generate the email address
     document.addEventListener("DOMContentLoaded", function () {
       var user = "juanmelguizogm";
       var domain = "gmail.com";
       var email = user + "@" + domain;
-      var emailLink = '<a href="mailto:' + email + '">' + email + '</a>';
+      var emailLink = '<a class="link" href="mailto:' + email + '">' + email + '</a>';
       document.getElementById('email').innerHTML = emailLink;
 
 
