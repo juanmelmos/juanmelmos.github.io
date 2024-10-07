@@ -16,15 +16,6 @@ body {
   color: #00FFFB;
 }
 
-header {
-  text-align: center;
-  padding: 20px;
-  padding-top: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .link {
   color: #FFFF00;
   text-decoration: none;
@@ -35,6 +26,17 @@ header {
 }
 .link:hover {
   text-decoration: underline;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Fixed navigation menu at the top */
@@ -61,8 +63,11 @@ header {
 }
 
 .menu ul li a {
-  display: block;
-  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
   color: white;
   text-decoration: none;
 }
@@ -96,6 +101,20 @@ img.email {
 
 .menu-toggle {
   display: none;
+}
+
+/* Style for the footer */
+
+.contactIssue {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #FFFF00;
+  border-top: 1px solid #FFFF00;
+}
+
+.copyright{
+  text-align: center;
 }
 
 /* Media query for border margins */
@@ -139,5 +158,45 @@ img.email {
 
   .menu-toggle:hover {
     background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Light mode styles */
+
+.toggle-button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  width: 100%;
+  height: 100%;
+  max-width: 40px; /* Ajusta según el tamaño deseado dentro del menú */
+  max-height: 40px; /* Mantiene una proporción razonable */
+  object-fit: contain; /* Mantiene la proporción de la imagen sin distorsionar */
+}
+
+body.light-theme {
+  background-color: white;
+  color: black;
+}
+
+body.light-theme header {
+  background-color: white;
+  color: black;
+}
+
+body.light-theme .link {
+  color: #0A00A4;
+}
+
+body.light-theme {
+  .contactIssue {
+    border-bottom: 1px solid #0f0052;
+    border-top: 1px solid #0f0052;
   }
 }

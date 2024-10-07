@@ -36,6 +36,7 @@
       </li>
       <li><a href="#education">Education</a></li>
       <li><a href="#contact">Contact me</a></li>
+      <button id="toggle-theme" class="toggle-button"><img id="toggle-icon" class="toggle-icon" src="./assets/img/sol.png" alt="Moon"></button>
     </ul>
     <div class="menu-toggle">&#9776;</div>
   </nav>
@@ -150,34 +151,54 @@
       </dl>
     </section>
     <footer>
-      <div class="contactContainer">
-      <h2 id="contact">Contact me</h2>
-      <p>Feel free to reach out to me at <span id="email"></span> or connect
-        with me on:
-      </p>
-      <ul>
-        <li><a class="link" href="https://www.linkedin.com/in/juan-melguizo-moscoso-b3003419a/" title="LinkedIn"
-            target="_blank">
-            LinkedIn</a></li>
-        <li><a class="link" href="https://twitter.com/Blaze_JMM" title="X" target="_blank">X</a></li>
-      </ul>
-      <h2>Report an issue</h2>
-      <p>If you found a bug or have a suggestion, please open an issue on <a class="link"
-          href="https://github.com/juanmelmos/juanmelmos.github.io/issues" title="Issue Github"
-          target="_blank">GitHub.</a>
-      </p>
-    </div>
-      <p>&#169; Copyright 2024 Juan Melguizo</p>
+      <div class="contactIssue">
+        <div class="contact">
+          <h2 id="contact">Contact me</h2>
+          <p>Feel free to reach out to me at <span id="email"></span> or connect
+            with me on:
+          </p>
+          <ul>
+            <li><a class="link" href="https://www.linkedin.com/in/juan-melguizo-moscoso-b3003419a/" title="LinkedIn"
+                target="_blank">
+                LinkedIn</a></li>
+            <li><a class="link" href="https://twitter.com/Blaze_JMM" title="X" target="_blank">X</a></li>
+          </ul>
+        </div>
+        <div class="issue">
+          <h2>Report an issue</h2>
+          <p>If you found a bug or have a suggestion, please open an issue on <a class="link"
+              href="https://github.com/juanmelmos/juanmelmos.github.io/issues" title="Issue Github"
+              target="_blank">GitHub.</a>
+          </p>
+        </div>
+      </div>
+      <p class="copyright">&#169; Copyright 2024 Juan Melguizo</p>
     </footer>
   </main>
 
   <script type="text/javascript">
+
+    // JavaScript to change the visual mode of the menu in smartphones
+
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav ul');
 
     menuToggle.addEventListener('click', function () {
       nav.classList.toggle('active');
     });
+
+    // JavaScript to toggle between dark mode and light mode
+
+    const toggleThemeButton = document.getElementById('toggle-theme');
+    toggleThemeButton.addEventListener('click', () => {
+      document.body.classList.toggle('light-theme');
+      const toggleIcon = document.getElementById('toggle-icon');
+      toggleIcon.src.includes('luna.png') ? 
+      toggleIcon.src = './assets/img/sol.png' :
+      toggleIcon.src = './assets/img/luna.png';
+    });
+
+
     // JavaScript to dynamically generate the email address
     document.addEventListener("DOMContentLoaded", function () {
       var user = "juanmelguizogm";
