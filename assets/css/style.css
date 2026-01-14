@@ -129,7 +129,7 @@ img.email {
 /* Media query for 700px */
 @media screen and (max-width: 120ch) {
 
-  header {
+  header, .contactIssue {
     flex-direction: column;
     align-items: center;
   }
