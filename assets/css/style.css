@@ -119,15 +119,21 @@ img.email {
 
 /* Media query for border margins */
 
-@media (max-width: 90ch) {
+@media (max-width: 120ch) {
   html {
-    margin: auto 2px;
+    margin: auto 10ch auto 5ch;
   }
 }
 
 
 /* Media query for 700px */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 120ch) {
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .menu ul {
     display: none;
     flex-direction: column;
