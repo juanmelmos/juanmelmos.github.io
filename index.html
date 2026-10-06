@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Melguizo | Portfolio</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="assets/icons/favicon.webp">
+</head>
+
+<body>
+
+  <header class="hero">
+    <img src="assets/img/logo.webp" class="hero-logo" alt="Logo">
+    <div class="hero-text">
+      <h1 data-i18n="name">Juan Melguizo Moscoso</h1>
+    </div>
+  </header>
+
+  <nav class="menu">
+    <div class="menu-toggle">&#9776;</div>
+    <ul>
+      <li><a href="#about" data-i18n="navAbout">About</a></li>
+      <li><a href="#experience" data-i18n="navExperience">Experience</a></li>
+      <li><a href="#projects" data-i18n="navProjects">Projects</a></li>
+      <li><a href="#skills" data-i18n="navSkills">Skills</a></li>
+      <li><a href="#education" data-i18n="navEducation">Education</a></li>
+      <li><a href="#contact" data-i18n="navContact">Contact</a></li>
+
+      <li><button id="lang-toggle">🌍 EN / ES</button></li>
+      <li>
+        <button id="toggle-theme">
+          <img id="toggle-icon" src="assets/img/sol.png">
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <h2 data-i18n="aboutTitle">About me</h2>
+      <p data-i18n="aboutText">
+        Hi, I'm a Full Stack developer with solid knowledge of the most
+        in-demand technologies today. My education has enabled me to master both
+        frontend and backend development, allowing me to create complete and
+        efficient solutions. Thanks to my continuous update on technology trends,
+        I can offer innovative products tailored to market needs.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2 data-i18n="experienceTitle">Experience</h2>
+      <article>
+        <h3 data-i18n="experienceUVTitle">Web content editor at Universitat de València</h3>
+        <p data-i18n="experienceUVText">Mainly, I was responsible for modifying the content of the web
+          pages. We used a non-commercial CMS, which was created specifically for
+          them, allowing us to easily modify each section of the page. Sometimes,
+          when it couldn't be done with the CMS, we would also modify some things
+          with raw HTML. This was a great first work experience for me.</p>
+      </article>
+      <article>
+        <h3 data-i18n="experienceMMTitle">Mediamarkt</h3>
+        <p data-i18n="experienceMMText">I am currently working in customer service at MediaMarkt, where I have developed
+          strong problem-solving, communication, and customer-oriented skills. At the same time, I actively continue
+          improving my programming skills and developing personal projects, with the goal of transitioning into a
+          professional software development role.</p>
+      </article>
+    </section>
+
+    <section id="projects">
+      <h2 data-i18n="projectsTitle">Projects</h2>
+
+      <article>
+        <h3>Tic Tac Toe</h3>
+        <p data-i18n="projectTtt">Game developed in Java using threads, libraries, database access, and
+          sockets for online LAN play. It includes login and registration, single-player and online modes, and stores
+          wins, losses, and draws.</p>
+        <a href="https://github.com/juanmelmos/TicTacToe" target="_blank">GitHub</a>
+      </article>
+
+      <article>
+        <h3>2PEOPLES</h3>
+        <p data-i18n="project2p">Public event organization platform where users can browse events, register, and access
+          all participation details. Built with Next.js and deployed on Vercel, with a robust database to manage users
+          and events for a smooth experience.</p>
+        <a href="https://2-peolpes.vercel.app/" target="_blank">Demo</a>
+        <a href="https://github.com/juanmelmos/2PEOPLES" target="_blank">GitHub</a>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2 data-i18n="skillsTitle">Skills</h2>
+      <p>HTML · CSS · JS · PHP · Java · Docker · Git · Kubernetes</p>
+    </section>
+
+    <section id="education">
+      <h2 data-i18n="educationTitle">Education</h2>
+
+      <div class="education-cards">
+
+        <div class="education-card">
+          <div class="education-card-inner">
+            <div class="education-card-front">
+              <h3 data-i18n="educationDAW">Applications Web Developer</h3>
+              <span class="click-hint">Click to see more</span>
+            </div>
+            <div class="education-card-back">
+              <p data-i18n="educationDAWText">
+                During this course, I developed strong skills in HTML, CSS, JavaScript, and PHP. I also learned
+                Bootstrap to create responsive interfaces and expanded my knowledge through tools like Git, GitHub,
+                Azure, and AWS, building a solid foundation for modern web development.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-card">
+          <div class="education-card-inner">
+            <div class="education-card-front">
+              <h3 data-i18n="educationSMR">
+                Microcomputer Systems and Networks Administrator
+              </h3>
+              <span data-i18n="clickHint" class="click-hint">Click to see more</span>
+            </div>
+            <div class="education-card-back">
+              <p data-i18n="educationSMRText">
+                I learned the fundamentals of networks, servers, protocols and
+                configured services such as DNS, DHCP, FTP and email servers.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h2 id="contact" data-i18n="contactTitle">Contact</h2>
+      <p data-i18n="contactText">Contact me at </p><span id="email"></span>
+      <p class="copyright">© 2026 Juan Melguizo</p>
+    </footer>
+
+  </main>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/lang.js"></script>
+</body>
+
+</html>
