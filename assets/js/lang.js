@@ -26,7 +26,17 @@ const translations = {
     educationSMRText: "I learned the fundamentals of networks, servers, protocols and configured services such as DNS, DHCP, FTP and email servers.",
     clickHint: "Click to see more",
     contactTitle: "Contact",
-    contactText: "Contact me at"
+    contactText: "Or write to me directly at",
+    contactName: "Name",
+    contactNamePh: "Your name",
+    contactFrom: "Your email",
+    contactFromPh: "you@example.com",
+    contactSubject: "Subject",
+    contactSubjectPh: "What is this about?",
+    contactMessage: "Message",
+    contactMessagePh: "Write your message here...",
+    contactSend: "Send message",
+    contactNote: "This will open your default email app with the message ready to send."
   },
   es: {
     name: "Juan Melguizo Moscoso",
@@ -55,7 +65,17 @@ const translations = {
     educationSMRText: "Aprendí los fundamentos de redes, servidores, protocolos y configuré servicios como servidores DNS, DHCP, FTP y de correo electrónico.",
     clickHint: "Haz clic para ver más",
     contactTitle: "Contacto",
-    contactText: "Contáctame en"
+    contactText: "O escríbeme directamente a",
+    contactName: "Nombre",
+    contactNamePh: "Tu nombre",
+    contactFrom: "Tu correo",
+    contactFromPh: "tu@ejemplo.com",
+    contactSubject: "Asunto",
+    contactSubjectPh: "¿De qué se trata?",
+    contactMessage: "Mensaje",
+    contactMessagePh: "Escribe tu mensaje aquí...",
+    contactSend: "Enviar mensaje",
+    contactNote: "Se abrirá tu aplicación de correo predeterminada con el mensaje listo para enviar."
   }
 };
 
@@ -65,5 +85,8 @@ document.getElementById("lang-toggle").addEventListener("click", () => {
   currentLang = currentLang === "en" ? "es" : "en";
   document.querySelectorAll("[data-i18n]").forEach(el => {
     el.innerHTML = translations[currentLang][el.dataset.i18n];
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    el.placeholder = translations[currentLang][el.dataset.i18nPlaceholder];
   });
 });
